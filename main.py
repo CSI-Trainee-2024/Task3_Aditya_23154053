@@ -43,6 +43,7 @@ while running:
                 playerX_change = 0
 
 
+<<<<<<< HEAD
 
 
     playerX += playerX_change
@@ -52,5 +53,8 @@ while running:
     elif playerX >= 736:
         playerX = 736
 
+=======
+    playerX += playerX_change
+>>>>>>> 2ab43d53123c2a04a5ee5821a0f352559ba00dfe
     player(playerX, playerY)
     pygame.display.update()
