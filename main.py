@@ -19,11 +19,20 @@ playerX = 370
 playerY = 480
 playerX_change = 0
 
-enemyImg = pygame.image.load('enemy.png')
-enemyX = random.randint(0, 735)
-enemyY = random.randint(50, 150)
-enemyX_change = 4
-enemyY_change = 40
+
+enemyImg = []
+enemyX = []
+enemyY = []
+enemyX_change = []
+enemyY_change = []
+num_of_enemies = 6
+
+for i in range(num_of_enemies):
+    enemyImg.append(pygame.image.load('enemy.png'))
+    enemyX.append(random.randint(0, 735))
+    enemyY.append(random.randint(50, 150))
+    enemyX_change.append(4)
+    enemyY_change.append(40)
 
 bulletImg = pygame.image.load('bullet.png')
 bulletX = 0
